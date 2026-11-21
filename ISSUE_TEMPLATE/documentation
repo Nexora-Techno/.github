@@ -1,0 +1,49 @@
+
+name: Documentation Issue
+description: Report incorrect, missing, or unclear documentation.
+title: "[DOCS] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project Name
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Documentation Location
+      description: Provide a URL or file path.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      options:
+        - Incorrect Information
+        - Missing Documentation
+        - Unclear Explanation
+        - Outdated Content
+        - Typographical Error
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Improvement
+    validations:
+      required: false
