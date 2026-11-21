@@ -1,0 +1,11 @@
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: General Questions and Discussions
+    url: https://github.com/orgs/Nexora-Techno/discussions
+    about: Ask questions and discuss ideas with the Nexora-Techno community.
+
+  - name: Security Vulnerability Reporting
+    url: https://github.com/Nexora-Techno/.github/security/advisories/new
+    about: Report security vulnerabilities privately. Check the project's security policy first.
