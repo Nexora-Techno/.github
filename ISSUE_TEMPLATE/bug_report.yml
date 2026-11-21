@@ -1,0 +1,106 @@
+
+name: Bug Report
+description: Report a bug or unexpected behavior in a Nexora-Techno project.
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Nexora-Techno projects.
+        Please provide accurate and detailed information.
+
+  - type: input
+    id: project
+    attributes:
+      label: Project Name
+      description: Which Nexora-Techno project is affected?
+      placeholder: Project name
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version are you using?
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clearly describe the issue.
+      placeholder: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions.
+      placeholder: |
+        1. Open the application
+        2. Navigate to ...
+        3. Perform ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant OS, hardware, runtime, and dependency versions.
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and Screenshots
+      description: Add relevant logs or screenshots. Remove passwords, tokens, and private information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Verification
+      options:
+        - label: I have searched existing issues for duplicates.
+          required: true
+        - label: I have provided accurate information.
+          required: true
